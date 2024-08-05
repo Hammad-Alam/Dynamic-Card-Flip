@@ -3,28 +3,23 @@ import Sadapay_White from "../Sadapay_White.PNG";
 
 function CardBack() {
   return (
-    <div class="bg-[#FBB089] w-[225px] mx-auto mt-[200px] rounded-xl h-[300px] flex">
-      <div class="mx-4 w-8 bg-black h-[300px]"></div>
-      <div class="w-44">
-        <div class="flex">
-          <img
-            src={Sadapay_White}
-            alt="sadapaywhite"
-            srcset=""
-            class="w-12 -ml-2"
-          />
-          <p class="my-4 text-xl font-bold uppercase text-white">Sadapay</p>
+    <div className="bg-[#FBB089] w-full max-w-56 mx-auto mt-10 rounded-xl h-[300px] flex">
+      <div className="mx-4 w-8 bg-black"></div>
+      <div className="flex-1">
+        <div className="flex items-center">
+          <img src={Sadapay_White} alt="sadapaywhite" className="-ml-2 w-12" />
+          <p className="ml-2 text-xl font-bold uppercase text-white">Sadapay</p>
         </div>
-        <div>
-          <p class="mt-16 text-white font-bold">777-100</p>
-          <p class="text-xs my-1 text-white">
+        <div className="mt-16 text-white">
+          <p className="text-lg font-bold">777-100</p>
+          <p className="text-xs my-1">
             Issued by SadaTech Pakistan Pvt. Limited pursuant to a license by
             MasterCard Asia/Pacific Pvt. Ltd
           </p>
-          <a href="https://sadapay.pk/" target="_blank">
-            <p class="text-xs text-white my-1">sadapay.pk</p>
+          <a href="https://sadapay.pk/" target="_blank" className="block mt-2">
+            sadapay.pk
           </a>
-          <p class="text-white font-bold uppercase my-5 text-end text-lg">
+          <p className="text-lg font-bold uppercase text-end mt-5">
             MasterCard
           </p>
         </div>

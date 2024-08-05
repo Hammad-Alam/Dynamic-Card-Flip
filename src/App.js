@@ -18,11 +18,11 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App flex flex-col items-center justify-center min-h-screen">
       {showCard}
       <button
         onClick={handleClick}
-        className="mx-[700px] my-10 px-2 py-2 rounded-xl bg-[#00a99d] text-white hover:bg-[#FBB089]"
+        className="mt-10 px-4 py-2 rounded-xl bg-[#00a99d] text-white hover:bg-[#FBB089]"
       >
         {text}
       </button>
