@@ -3,7 +3,10 @@ import Sadapay_White from "../Sadapay_White.PNG";
 
 function CardBack() {
   return (
-    <div className="bg-[#FBB089] w-full max-w-56 mx-auto mt-10 rounded-xl h-[300px] flex">
+    <div
+      data-aos="flip-right"
+      className="bg-[#FBB089] w-full max-w-56 mx-auto mt-10 rounded-xl h-[300px] flex"
+    >
       <div className="mx-4 w-8 bg-black"></div>
       <div className="flex-1">
         <div className="flex items-center">

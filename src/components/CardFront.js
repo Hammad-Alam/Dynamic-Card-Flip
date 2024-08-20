@@ -2,10 +2,16 @@ import React from "react";
 import ATMcardchip from "../ATMcardchip.png";
 import Mastercard from "../Mastercard.png";
 import Sadapay from "../Sadapay.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 function CardFront() {
   return (
-    <div className="bg-[#00a99d] w-full max-w-56 mx-auto mt-10 rounded-xl h-[300px] p-6">
+    <div
+      data-aos="flip-right"
+      className="bg-[#00a99d] w-full max-w-56 mx-auto mt-10 rounded-xl h-[300px] p-6"
+    >
       <div className="flex justify-center mx-12 py-6">
         <img src={ATMcardchip} alt="cardchip" />
       </div>
